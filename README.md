@@ -1,11 +1,10 @@
-# Explainable Human-centered Traits from Head Motion and Facial Expression Dynamics
+# Multiview Attention Fusion for Explainable Body Language Behavior Recognition
 This is the official repository for the paper [Multiview Attention Fusion for Explainable Body Language Behavior Recognition]
 Body language behavior, including gestures and fine-grained movements not only reflects human emotions, but also serves as a versatile cue for enhancing emotional intelligence and creating responsive technologies. In this work, we explore the efficacy of multiview-multimodal cues for explainable prediction of bodily behavior. This paper proposes an attention fusion method that combines features extracted from (1) multiview videos termed “RGB”, (2) their multiview Discrete Cosine Transform representations termed “DCT” and (3) three stream skeleton features termed “Skeleton”, via a transformer-based approach. We evaluate our approach on the diverse BBSI and Drive&Act datasets. Empirical results confirm that the RGB, DCT and Skeleton features enable discovery of multiple class-specific behaviors resulting in explainable predictions. Our key findings are: (a) Multimodal approaches outperform unimodal counterparts in categorizing bodily behavioral classes; (b) Efficient class predictions and plausible explanations are achieved with both unimodal and multimodal approaches; and (c) Empirical results confirm the superiority of our approach compared to state-of-the-art methods on both datasets.
 
 ## Framework Overview:
-![framework_overview](https://github.com/deepsurbhi8/Explainable_Human_Traits_Prediction/assets/79365852/9c3480ab-78c1-40ae-89bb-02b75503fa37)
-*Overview of the proposed framework: Kinemes (elementary head motions), action units (atomic facial movements) and speech features employed for explainable trait prediction*
-
+![Image](https://github.com/user-attachments/assets/3a4cee1f-d778-45fb-9c2d-84c014c454af)
+*Framework overview: Raw (RGB) videos plus corresponding DCT and skeleton features are employed for bodily behavior recognition.*
 ## Implementation Details:
 **Preprocessing** -- We've used [Openface](https://github.com/TadasBaltrusaitis/OpenFace) to extract pose angles and action units for kineme and AU generation. For audio feature generation, we've used [Librosa](https://librosa.org/doc/latest/index.html) python package.
 

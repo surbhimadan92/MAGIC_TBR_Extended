@@ -13,7 +13,7 @@ Body language behavior, including gestures and fine-grained movements not only r
 
 **LaViLa:** To extract LaViLA features, follow: (https://github.com/facebookresearch/LaViLa)
 
-**Preprocessing** -- We've used [Openface](https://github.com/TadasBaltrusaitis/OpenFace) to extract pose angles and action units for kineme and AU generation. For audio feature generation, we've used [Librosa](https://librosa.org/doc/latest/index.html) python package.
+**Preprocessing** --For skeleton features, we employed the Tracking Any Point (TAP) Code [https://github.com/google-deepmind/tapnet] to track body points throughout the video. TAP takes the input video along with the initial body points to be tracked in each frame. The initial body points were derived from Mediapipe coordinates [https://chuoling.github.io/mediapipe] in the first frame. For additional details, please refer to the paper.
 
 **Model Architecture** -- We've done Chunk level and video level analysis for both the datasets MIT and FICS. For more details, please refer to the paper.
 

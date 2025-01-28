@@ -15,11 +15,11 @@ Body language behavior, including gestures and fine-grained movements not only r
 
 **Preprocessing** --For skeleton features, we employed the Tracking Any Point (TAP) Code [https://github.com/google-deepmind/tapnet] to track body points throughout the video. TAP takes the input video along with the initial body points to be tracked in each frame. The initial body points were derived from Mediapipe coordinates [https://chuoling.github.io/mediapipe] in the first frame. For additional details, please refer to the paper.
 
-**Model Architecture** -- We've done Chunk level and video level analysis for both the datasets MIT and FICS. For more details, please refer to the paper.
+**Model Architecture** -- We've done both bimodal (RGB+Skeleton) and Trimodal (RGB+DCT+Skeleton) fusion analysis for both the datasets BBSI and Drive&Act. For more details, please refer to the paper.
 
 **Requirements** -- This code was tested on Python 3.9.16, Tensorflow 2.4.1 and Keras 2.4.0. It is recommended to use the appropraite versions of each library to implement the code.
 
-**Dataset Features** -- All the openface and librosa features for both the datasets are available at the following link: (https://drive.google.com/drive/folders/1gyPFH2kSGEHgpNxiGDVTV2w6eaN0wqsU?usp=sharing). Note: In case of any issue regarding data access, please write an email to: er.surbhimadan.2013@gmail.com
+**Dataset** -- For BBSI dataset, please refer to [https://multimediate-challenge.org] and for any further query, please write an email to: er.surbhimadan.2013@gmail.com
 
 ## Repository Structure:
 <pre>

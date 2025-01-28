@@ -26,28 +26,16 @@ Body language behavior, including gestures and fine-grained movements not only r
 <code>
 ├── README.md    
 ├── Architectures           
-│   ├── Attention_fusion_figure.pdf      # Additive attention fusion architecture overview
-│   ├── Framework_overview.pdf           # Overview of the proposed framework
-│   └── LSTM_arch.pdf                    # Trimodal feature fusion architecture
+│   ├── Overall_Architecture_ACM_MM_new (2).png     # Trimodal fusion architecture overview
+│   ├── RGB_and_DCT_Frames (1).jpg           # Sample RGB and corresponding DCT frames
+│   └── main_2.pdf                  # Bimodal feature fusion architecture
 ├── Codes         
-│   ├── Bimodal Fusion                   # Bimodal implementation of different combination of features (AU, Kineme and Audio features)        
-│   │   ├── Classification_Feature_au_kin_VL_MIT.py  # (Eg: contains the code to implement video-level classification appraoch over the MIT dataset using AU and Kineme matrices using Feature fusion)
-│   ├── Feature Extraction               
-│   │   ├── Action_units_data_prep.py    # Code to create Action Unit data matrix from the openface extracted au files
-│   │   ├── Audio_chunk_formation.py     # Code to create chunks from the Audio data matrix 
-│   │   ├── Kineme_data_prep.py          # Code to create kineme feature data matrix for train and test set files
-│   ├── Trimodal Fusion                  # Different approaches (Decision, Feature and Attention-based fusion) of the three modalities (AU, Kineme, Audio features)
-│   ├── Unimodal Approach                # Single modality code implementation over the two datasets
-├── Data         
-│   ├── FICS_dataset                  # Bimodal implementation of different combination of features (AU, Kineme and Audio features)        
-│   │   ├── FICS_test_files.zip       # All features (Action Unit, Kineme and Audio) over the test set of FICS dataset
-│   │   ├── FICS_train_files.zip      # All features over the train set of FICS dataset
-│   │   ├── FICS_val_files.zip        # All features for the validation set of FICS dataset
-│   ├── MIT_dataset    
-│   │   ├── MIT_AU_features.zip       # Action Unit features extracted over all files of the MIT dataset
-│   │   ├── MIT_kineme_features.zip   # Kineme representation for the head pose values over the MIT dataset
-├── Presentation         
-│   ├── Explainable_Human_Traits_Prediction.pdf        
+│   ├── Fusion_Code                   
+│   │   ├── Bimodal_Fusion_RGB_Skeleton_fusion.ipynb # Bimodal feature fusion implementation of RGB and 3-stream Skeleton features.   
+|   |   ├── Trimodal_Fusion(rgb_dct_skeleton_fusion).ipynb # Trimodal feature fusion implementation of RGB, DCT and 3-stream Skeleton features.   
+│   ├── Preprocessing              
+│   │   ├── creation_of_three_stream_arrays.py   # Code to create Three stream skeleton features from extracted body-points
+│   │   ├── extract_landmarks_mediapipe.py    # Code to extract landmarks of first frame of given input video
 </code>
 </pre>
 ## Related Links:

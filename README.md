@@ -17,7 +17,7 @@ Body language behavior, including gestures and fine-grained movements not only r
 
 **Model Architecture** -- We've done Chunk level and video level analysis for both the datasets MIT and FICS. For more details, please refer to the paper.
 
-**Requirements** -- This code was tested on Python 3.8, Tensorflow 2.7 and Keras 2.7. It is recommended to use the appropraite versions of each library to implement the code.
+**Requirements** -- This code was tested on Python 3.9.16, Tensorflow 2.4.1 and Keras 2.4.0. It is recommended to use the appropraite versions of each library to implement the code.
 
 **Dataset Features** -- All the openface and librosa features for both the datasets are available at the following link: (https://drive.google.com/drive/folders/1gyPFH2kSGEHgpNxiGDVTV2w6eaN0wqsU?usp=sharing). Note: In case of any issue regarding data access, please write an email to: er.surbhimadan.2013@gmail.com
 
